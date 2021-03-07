@@ -20,10 +20,8 @@ app.post('/users', (req, res) => {
   });
 });
 
-// _id: ObjectId('6044b63c69271714c10792ba');
 app.get('/users/:id', (req, res) => {
   let Id = req.params.id;
-  console.log(Id);
   //   User.find({ _id: `${Id}` }, (err, content) => {
   //     console.log(err);
   //     res.json(content);

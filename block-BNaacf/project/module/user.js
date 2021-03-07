@@ -8,11 +8,3 @@ var userSchema = new Schema({
   age: { type: Number, default: 0 },
   habits: [String],
 });
-
-var address = new Schema({
-  village: String,
-  city: String,
-  state: String,
-  pin: Number,
-  user: Schema.Types.ObjectId,
-});

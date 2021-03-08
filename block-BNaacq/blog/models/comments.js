@@ -4,7 +4,7 @@ var comments = new Schema(
   {
     content: { type: String, minlength: 5, maxlength: 30 },
     author: Schema.Types.ObjectId,
-    article: String,
+    article: { type: Schema.Types.ObjectId, ref: 'Article' },
   },
   { timestamps: true }
 );

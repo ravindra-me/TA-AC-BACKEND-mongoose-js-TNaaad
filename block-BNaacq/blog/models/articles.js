@@ -7,8 +7,8 @@ var article = new Schema(
     description: String,
     tags: String,
     likes: [String],
-    author: Schema.Types.ObjectId,
-    comments: [String],
+    author: { type: Schema.Types.ObjectId, ref: 'User' },
+    comments: [{ type: Schema.Types.ObjectId, ref: 'Comments' }],
   },
   { timestamps: true }
 );

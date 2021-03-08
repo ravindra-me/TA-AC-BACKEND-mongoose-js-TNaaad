@@ -10,3 +10,4 @@ var user = new Schema(
 );
 
 var User = mongoose.model('User', user);
+module.exports = User;
